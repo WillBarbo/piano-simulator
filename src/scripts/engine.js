@@ -12,3 +12,6 @@ pianoKeys.forEach((key) => {
   key.addEventListener("click", () => playTune(key.dataset.key)) //sem "{}", caso seja somente uma linha
 })
 
+document.addEventListener("keydown", (e) => {
+  playTune(e.key)
+})
