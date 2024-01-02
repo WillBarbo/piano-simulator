@@ -26,3 +26,9 @@ document.addEventListener("keydown", (e) => {
     playTune(e.key)
   }
 })
+
+const handleVolume = (e) => {
+  audio.volume = e.target.value
+}
+
+volumeSlider.addEventListener("input", handleVolume)
